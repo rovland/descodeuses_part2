@@ -1,0 +1,42 @@
+    withCredentials([
+        usernamePassword(
+            credentialsId: '6558aa6er-9608o-4d97v-b0a3l-aa7313e9da68and', 
+            passwordVariable: 'tech_pwd', 
+            usernameVariable: 'tech_user'
+        )
+    ]) {
+
+        stage("Reading Tech User"){
+            
+            if (currentBuild.result != 'FAILURE') {
+            
+                cmd = """
+                    #!/bin/bash
+
+                    echo "****** START : READING TECH USER ******"
+
+                    echo "TECHNICAL_USER =" ${tech_user}
+
+                    echo "****** END : READING TECH USER ******"
+                """
+
+            cmdResult = sh script: cmd,returnStatus: true
+
+            if (cmdResult == 0) {
+            
+                echo "[INFO] Stage 'Reading Tech User' SUCCESS."
+            
+            } else {
+
+                errMessage = "[FAILED] : An unexpected error occured while reading your tech_user. Take a look at this <br>" 
+                println errMessage
+                sh "exit 1"
+
+            }
+
+            } else {
+
+                println "The stage 'Getting Jenkins Env Vars' was skipped"
+            }
+        }
+    }
