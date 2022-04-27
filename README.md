@@ -278,7 +278,7 @@ try {
     }
 }
 ```
-Save your Jenkinsfile and push it (including your folder as well) into master branch
+Save your Jenkinsfile and push it (including your folder as well) into main branch
 
 Now on Jenkins website, create your new jenkins pipeline job under your jenkins folder
 
@@ -298,13 +298,15 @@ Save your changes and build the job
 
 Find a way to fix all errors occur by editing your Jenkinsfile on local
 
-Now if you've fixed all errors occur , submit your modified Jenkinsfile into master branch and re-test your job on jenkins
+- Tips : In your Jenkins job configuration, take a look at the branch name set (it shouldn't be 'master' branch)
+
+Now if you've fixed all errors occur , submit your modified Jenkinsfile into main branch and re-test your job on jenkins
 
 Make sure that you've configured and saved your github personal token : https://github.com/settings/tokens  (Make sure to copy your personal access token now. You won’t be able to see it again!)
 
 Add your GitHub personal token into Jenkins Credentials : https://<YOUR_JENKINS_SERVER>/credentials/store/system/domain/_/newCredentials
 
-Update your Jenkinsfile with the groovy code below, push it into master branch and fix all error occur
+Update your Jenkinsfile with the groovy code below, push it into main branch and fix all error occur
 
 - Tips : Replace the credentialsId in the code below with your own
 
