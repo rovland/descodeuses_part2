@@ -2,6 +2,8 @@
 ## Exercises for "DevOps Engineering Warriors"
 
 ## Exercise I : Jenkins Freestyle Project
+Install docker desktop : https://docs.docker.com/get-docker/
+
 Go to your Jenkins Server : https://<YOUR_JENKINS_SERVER>/
 
 Create a new folder with the following syntax <Firstname_NameOfYourFavoriteFruit_Codeuse> by clicking on "New Item" button
