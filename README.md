@@ -5,7 +5,7 @@
 Install Jenkins from : https://www.jenkins.io/download/ (download stable (lts) version )
 - Tips on how to proceed with this installation : https://www.jenkins.io/doc/book/installing/windows/
 
-Go to your Jenkins Server : https://<YOUR_JENKINS_SERVER>/
+Go to your Jenkins Server : http://localhost:8080/
 
 Create a new folder with the following syntax <Firstname_NameOfYourFavoriteFruit_Codeuse> by clicking on "New Item" button
 
@@ -86,7 +86,7 @@ Now go back to your job configuration page and add a new shell to play with Jenk
 
 Now save your modifications and execute a new build then have a look at the console output
 
-Humm it's weird!!! .... **JENKINS BUILD_UR** variable seems not working ...Fix this issue by checking out the link : https://<YOUR_JENKINS_SERVER>/env-vars.html/
+Humm it's weird!!! .... **JENKINS BUILD_UR** variable seems not working ...Fix this issue by checking out the link : http://localhost:8080/env-vars.html/
 
 Also add in your job configuration the following code :
 
@@ -307,7 +307,7 @@ Now if you've fixed all errors occur , submit your modified Jenkinsfile into mai
 
 Make sure that you've configured and saved your github personal token : https://github.com/settings/tokens  (Make sure to copy your personal access token now. You won’t be able to see it again!)
 
-Add your GitHub personal token into Jenkins Credentials : https://<YOUR_JENKINS_SERVER>/credentials/store/system/domain/_/newCredentials
+Add your GitHub personal token into Jenkins Credentials : http://localhost:8080/credentials/store/system/domain/_/newCredentials
 
 Update your Jenkinsfile with the groovy code below, push it into main branch and fix all error occur
 
