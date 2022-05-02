@@ -2,7 +2,8 @@
 ## Exercises for "DevOps Engineering Warriors"
 
 ## Exercise I : Jenkins Freestyle Project
-Install docker desktop : https://docs.docker.com/get-docker/
+Install Jenkins from : https://www.jenkins.io/download/ (download stable (lts) version )
+- Tips on how to proceed with this installation : https://www.jenkins.io/doc/book/installing/windows/
 
 Go to your Jenkins Server : https://<YOUR_JENKINS_SERVER>/
 
